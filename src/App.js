@@ -41,7 +41,13 @@ const App = () => {
       requestOptions
     )
       .then((response) => response.text())
-      .then((result) => console.log(result))
+      .then(() => {
+        setIdea("");
+        setDev_budget("");
+        setPpc_budget("");
+        setName("");
+        setPhone("");
+      })
       .catch((error) => console.log("error", error));
   };
 
