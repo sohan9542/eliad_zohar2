@@ -1,25 +1,37 @@
 import React from "react";
 import logo from "../images/Logo.svg";
 import { CgArrowLongRight } from "react-icons/cg";
-const Step3 = ({ setPage }) => {
+const Step3 = ({ setPage, setDev_budget }) => {
   return (
     <div className=" min-h-screen relative w-full bg_home ">
-       <div className=" absolute lg:hidden top-0 left-0 backdrop z-10"></div>
+      <div className=" absolute lg:hidden top-0 left-0 backdrop z-10"></div>
       <div className=" w-full relative z-20 pt-10 flex lg:hidden items-center justify-center">
         <div className=" line_verticla relative">
           <div className=" bg-pr w-9 h-9 rounded-full flex items-center justify-center text-black text-xl font-bold absolute -top-4 -left-3">
             1
           </div>
-          <div style={{left:"40px"}} className=" bg-pr font-bold   w-9 h-9 rounded-full flex items-center justify-center text-black text-xl  absolute -top-4 ">
+          <div
+            style={{ left: "40px" }}
+            className=" bg-pr font-bold   w-9 h-9 rounded-full flex items-center justify-center text-black text-xl  absolute -top-4 "
+          >
             2
           </div>
-          <div style={{left: "91px"}} className=" bg-pr font-bold   w-9 h-9 rounded-full flex items-center justify-center text-black text-xl  absolute -top-4 ">
+          <div
+            style={{ left: "91px" }}
+            className=" bg-pr font-bold   w-9 h-9 rounded-full flex items-center justify-center text-black text-xl  absolute -top-4 "
+          >
             3
           </div>
-          <div style={{left:"145px"}} className=" bg-black border border-white  w-9 h-9 rounded-full flex items-center justify-center text-white text-xl font-light absolute -top-4 ">
+          <div
+            style={{ left: "145px" }}
+            className=" bg-black border border-white  w-9 h-9 rounded-full flex items-center justify-center text-white text-xl font-light absolute -top-4 "
+          >
             4
           </div>
-          <div style={{left:"200px"}} className=" bg-black border border-white  w-9 h-9 rounded-full flex items-center justify-center text-white text-xl font-light absolute -top-4">
+          <div
+            style={{ left: "200px" }}
+            className=" bg-black border border-white  w-9 h-9 rounded-full flex items-center justify-center text-white text-xl font-light absolute -top-4"
+          >
             5
           </div>
         </div>
@@ -37,25 +49,37 @@ const Step3 = ({ setPage }) => {
 
             <div className=" w-full grid px-4 lg:px-0 grid-cols-1 mt-8 lg:grid-cols-2 gap-5 pl-4 lg:pl-16">
               <div
-                onClick={() => setPage(6)}
+                onClick={() => {
+                  setDev_budget("₪25,000 - ₪50,000")
+                  setPage(6)
+                }}
                 className=" mt-3 w-full font-light cursor-pointer justify-center hover:bg-pr bg-transparent text-lg py-3 flex items-center  border border-white hover:text-black  text-white  rounded-3xl"
               >
                 ₪25,000 - ₪50,000
               </div>
               <div
-                onClick={() => setPage(6)}
+                onClick={() =>{
+                  setDev_budget("₪50,000 - ₪100,000")
+                  setPage(6)
+                }}
                 className=" mt-3 w-full font-light cursor-pointer justify-center hover:bg-pr bg-transparent text-lg py-3 flex items-center  border border-white hover:text-black  text-white  rounded-3xl"
               >
                 ₪50,000 - ₪100,000
               </div>
               <div
-                onClick={() => setPage(6)}
+                onClick={() =>{
+                  setDev_budget("₪100,000 - ₪250,000")
+                  setPage(6)
+                }}
                 className=" mt-3 w-full font-light cursor-pointer justify-center hover:bg-pr bg-transparent text-lg py-3 flex items-center  border border-white hover:text-black  text-white  rounded-3xl"
               >
                 ₪100,000 - ₪250,000
               </div>
               <div
-                onClick={() => setPage(6)}
+                onClick={() =>{
+                  setDev_budget("₪250,000 ומעלה")
+                  setPage(6)
+                }}
                 className=" mt-3 w-full font-light cursor-pointer justify-center hover:bg-pr bg-transparent text-lg py-3 flex items-center  border border-white hover:text-black  text-white  rounded-3xl"
               >
                 ₪250,000 ומעלה

@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../images/Logo.svg";
 import { CgArrowLongRight } from "react-icons/cg";
-const Step4 = ({ setPage }) => {
+const Step4 = ({ setPage,setPpc_budget }) => {
   return (
     <div className=" min-h-screen relative w-full bg_home ">
       <div className=" absolute lg:hidden top-0 left-0 backdrop z-10"></div>
@@ -49,25 +49,37 @@ const Step4 = ({ setPage }) => {
 
             <div className=" w-full grid px-4 lg:px-0 grid-cols-1 mt-8 lg:grid-cols-2 gap-5 pl-4 lg:pl-16">
               <div
-                onClick={() => setPage(7)}
+                onClick={() => {
+                  setPpc_budget("₪25,000 - ₪50,000")
+                  setPage(7)
+                }}
                 className=" mt-3 w-full font-light cursor-pointer justify-center hover:bg-pr bg-transparent text-lg py-3 flex items-center  border border-white hover:text-black  text-white  rounded-3xl"
               >
                 ₪25,000 - ₪50,000
               </div>
               <div
-                onClick={() => setPage(7)}
+                onClick={() =>{
+                  setPpc_budget("₪50,000 - ₪100,000")
+                  setPage(7)
+                }}
                 className=" mt-3 w-full font-light cursor-pointer justify-center hover:bg-pr bg-transparent text-lg py-3 flex items-center  border border-white hover:text-black  text-white  rounded-3xl"
               >
                 ₪50,000 - ₪100,000
               </div>
               <div
-                onClick={() => setPage(7)}
+                onClick={() =>{
+                  setPpc_budget("₪100,000 - ₪250,000")
+                  setPage(7)
+                }}
                 className=" mt-3 w-full font-light cursor-pointer justify-center hover:bg-pr bg-transparent text-lg py-3 flex items-center  border border-white hover:text-black  text-white  rounded-3xl"
               >
                 ₪100,000 - ₪250,000
               </div>
               <div
-                onClick={() => setPage(7)}
+                onClick={() =>{
+                  setPpc_budget("₪250,000 ומעלה")
+                  setPage(7)
+                }}
                 className=" mt-3 w-full font-light cursor-pointer justify-center hover:bg-pr bg-transparent text-lg py-3 flex items-center  border border-white hover:text-black  text-white  rounded-3xl"
               >
                 ₪250,000 ומעלה
