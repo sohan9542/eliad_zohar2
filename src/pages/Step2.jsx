@@ -7,32 +7,20 @@ const Step2 = ({ setPage, idea, setIdea }) => {
     <div className=" min-h-screen w-full relative bg_home ">
       <div className=" absolute lg:hidden top-0 left-0 backdrop z-10"></div>
       <div className=" w-full relative z-20 pt-10 flex lg:hidden items-center justify-center">
-        <div className=" line_verticla relative">
-          <div className=" bg-pr w-9 h-9 rounded-full flex items-center justify-center text-black text-xl font-bold absolute -top-4 -left-3">
+      <div className=" line_verticla relative">
+          <div className=" bg-pr w-10 h-10 rounded-full flex items-center justify-center text-black text-xl font-bold absolute -top-4 -left-3">
             1
           </div>
-          <div
-            style={{ left: "40px" }}
-            className=" bg-pr font-bold border-white  w-9 h-9 rounded-full flex items-center justify-center text-black text-xl  absolute -top-4 "
-          >
+          <div style={{left:"55px"}} className=" bg-pr  w-10 h-10 rounded-full flex items-center justify-center text-black text-xl font-bold absolute -top-4 ">
             2
           </div>
-          <div
-            style={{ left: "91px" }}
-            className=" bg-black border border-white  w-9 h-9 rounded-full flex items-center justify-center text-white text-xl font-light absolute -top-4 "
-          >
+          <div style={{left: "120px"}} className=" bg-black border border-white w-10 h-10 rounded-full flex items-center justify-center text-white text-xl font-light absolute -top-4 ">
             3
           </div>
-          <div
-            style={{ left: "145px" }}
-            className=" bg-black border border-white  w-9 h-9 rounded-full flex items-center justify-center text-white text-xl font-light absolute -top-4 "
-          >
+          <div style={{left:"188px"}} className=" bg-black border border-white w-10 h-10 rounded-full flex items-center justify-center text-white text-xl font-light absolute -top-4 ">
             4
           </div>
-          <div
-            style={{ left: "200px" }}
-            className=" bg-black border border-white  w-9 h-9 rounded-full flex items-center justify-center text-white text-xl font-light absolute -top-4"
-          >
+          <div style={{left:"250px"}} className=" bg-black border border-white w-10 h-10 rounded-full flex items-center justify-center text-white text-xl font-light absolute -top-4">
             5
           </div>
         </div>
@@ -47,15 +35,22 @@ const Step2 = ({ setPage, idea, setIdea }) => {
             >
               פרט בכלליות <br /> על הרעיון:
             </h1>
-            <div className="flex items-center gap-x-7 divide-x py-7">
+            <div className="flex items-center gap-x-2 lg:gap-x-7 divide-x py-7">
               <p
                 style={{ direction: "rtl" }}
-                className=" text-gray-300 text-2xl font-light text-right"
+                className=" text-gray-300 text-lg lg:text-2xl font-light text-right"
               >
                 אנחנו מתחייבים שלא לשתף את הרעיון שלך אם אף גורם ו-או אדם אחר,
                 ולשמור על סודיות מוחלטת בנושא.
               </p>
-              <div className="  pl-6 lg:h-full h-12 w-20">
+              <div style={{height:"45px"}} className=" hidden lg:block   pl-6 lg:h-full  w-28">
+                <img
+                  src={sheild}
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  alt=""
+                />
+              </div>
+              <div className=" block lg:hidden  pl-2  lg:h-full h-10 w-20">
                 <img
                   src={sheild}
                   style={{ width: "100%", height: "100%", objectFit: "cover" }}
@@ -95,7 +90,7 @@ const Step2 = ({ setPage, idea, setIdea }) => {
                 onClick={() => idea !== "" ? setPage(5): null}
                 type="submit"
                 style={{borderRadius:"50px"}}
-                className=" px-16 hover:bg-pr hover:text-white text-3xl mt-1 py-6 flex items-center   font-bold border-2 border-white   text-white  rounded-3xl"
+                className=" px-16 hover:bg-pr hover:text-white text-xl lg:text-3xl mt-1 py-3 lg:py-6 flex items-center   font-bold border-2 border-white   text-white  rounded-3xl"
               >
                 המשך
               </button>

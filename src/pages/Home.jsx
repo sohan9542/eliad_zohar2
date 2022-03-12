@@ -12,7 +12,7 @@ const Home = ({setPage}) => {
       <div className=" absolute lg:hidden top-0 left-0 backdrop z-10">
 
       </div>
-      <div className=" w-full relative z-20 flex items-center justify-between pt-5 pl-32 lg:pl-60 pr-0 lg:pr-16">
+      <div className=" w-full relative z-20 flex items-center justify-between pt-5 pl-28 lg:pl-60 pr-0 lg:pr-16">
         <div className=" lg:h-12 h-8">
           <img
             src={logo}
@@ -38,7 +38,15 @@ const Home = ({setPage}) => {
             מימדיים, פיתוח Smart contracts כל אלה הם רק חלק קטן מהשירותים שלנו…
           </p>
           <div className=" w-full flex items-center justify-end mt-5">
-            <button style={{borderRadius:"50px"}} onClick={()=>setPage(2)} className=" px-12 hover:bg-white font-bold text-4xl mt-1 py-5 flex items-center  border  bg-pr border-transparent text-black ">
+            <button style={{borderRadius:"50px"}} onClick={()=>setPage(2)} className=" px-12 hidden lg:flex hover:bg-white font-bold text-4xl mt-1 py-5  items-center  border  bg-pr border-transparent text-black ">
+              <div className="flex items-center font-bold text-black pt-1">
+                <MdOutlineKeyboardArrowLeft className="mGap" />
+                <MdOutlineKeyboardArrowLeft className="mGap" />
+                <MdOutlineKeyboardArrowLeft />
+              </div>
+              התחל בשאלון
+            </button>
+            <button style={{borderRadius:"50px"}} onClick={()=>setPage(2)} className=" px-4 flex lg:hidden hover:bg-white font-bold text-4xl mt-1 py-3  items-center  border  bg-pr border-transparent text-black ">
               <div className="flex items-center font-bold text-black pt-1">
                 <MdOutlineKeyboardArrowLeft className="mGap" />
                 <MdOutlineKeyboardArrowLeft className="mGap" />
@@ -49,7 +57,7 @@ const Home = ({setPage}) => {
           </div>
         </div>
       </div>
-      <div className=" w-full relative z-20 pl-0 lg:pl-10">
+      <div className=" w-full relative hidden lg:block z-20 pl-0 lg:pl-10">
         <div className="flex items-center">
           <a href="#" className=" h-52 w-24 ">
             <img
@@ -73,6 +81,33 @@ const Home = ({setPage}) => {
             />
           </a>
           <p className="text-2xl flex items-center gap-4 text-white pl-0 lg:pl-3"><CgArrowLongLeft className=" w-12 h-12"/>בין הפרויקטים שלנו</p>
+        </div>
+      </div>
+      <div className=" w-full relative block lg:hidden z-20 pl-3 lg:pl-10">
+        <div className="flex items-center">
+          <a href="#" className=" h-32 w-14 ">
+            <img
+              src={avatar1}
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              alt=""
+            />
+          </a>
+          <a href="#" className=" h-32 w-14">
+            <img
+              src={avatar2}
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              alt=""
+            />
+          </a>
+          <a href="#" className=" h-32 w-14">
+            <img
+              src={avatar3}
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              alt=""
+            />
+          </a>
+          <p className="text-lg flex items-center gap-1 text-white pl-0">
+            <CgArrowLongLeft className=" w-7 h-7"/>בין הפרויקטים שלנו</p>
         </div>
       </div>
     </div>

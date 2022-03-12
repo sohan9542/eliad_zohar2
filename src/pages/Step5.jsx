@@ -11,32 +11,20 @@ const Step5 = ({ setPage, setName, setPhone, name, phone,postData }) => {
     <div className=" min-h-screen overflow-x-hidden w-full relative bg_home ">
       <div className=" absolute lg:hidden top-0 left-0 backdrop z-10"></div>
       <div className=" w-full relative  z-20 pt-10 flex lg:hidden items-center justify-center">
-        <div className=" line_verticla relative">
-          <div className=" bg-pr w-9 h-9 rounded-full flex items-center justify-center text-black text-xl font-bold absolute -top-4 -left-3">
+      <div className=" line_verticla relative">
+          <div className=" bg-pr w-10 h-10 rounded-full flex items-center justify-center text-black text-xl font-bold absolute -top-4 -left-3">
             1
           </div>
-          <div
-            style={{ left: "40px" }}
-            className=" bg-pr font-bold   w-9 h-9 rounded-full flex items-center justify-center text-black text-xl  absolute -top-4 "
-          >
+          <div style={{left:"55px"}} className=" bg-pr  w-10 h-10 rounded-full flex items-center justify-center text-black text-xl font-bold absolute -top-4 ">
             2
           </div>
-          <div
-            style={{ left: "91px" }}
-            className=" bg-pr font-bold   w-9 h-9 rounded-full flex items-center justify-center text-black text-xl  absolute -top-4 "
-          >
+          <div style={{left: "120px"}} className=" bg-pr  w-10 h-10 rounded-full flex items-center justify-center text-black text-xl font-bold absolute -top-4 ">
             3
           </div>
-          <div
-            style={{ left: "145px" }}
-            className=" bg-pr font-bold  w-9 h-9 rounded-full flex items-center justify-center text-black text-xl absolute -top-4 "
-          >
+          <div style={{left:"188px"}} className=" bg-pr  w-10 h-10 rounded-full flex items-center justify-center text-black text-xl font-bold absolute -top-4 ">
             4
           </div>
-          <div
-            style={{ left: "200px" }}
-            className=" bg-pr font-bold  w-9 h-9 rounded-full flex items-center justify-center text-black text-xl  absolute -top-4"
-          >
+          <div style={{left:"250px"}} className=" bg-pr  w-10 h-10 rounded-full flex items-center justify-center text-black text-xl font-bold absolute -top-4">
             5
           </div>
         </div>
@@ -46,7 +34,7 @@ const Step5 = ({ setPage, setName, setPhone, name, phone,postData }) => {
         <div className=" pr-0 lg:pr-16 lg:pl-32 col-span-2 flex items-center justify-end gap-20">
           <form
             onSubmit={(e) => e.preventDefault()}
-            className=" pr-12 lg:pr-16"
+            className=" pl-6 lg:pl-0 pr-12 lg:pr-16"
           >
             <h1
               style={{ direction: "rtl" }}
@@ -57,7 +45,7 @@ const Step5 = ({ setPage, setName, setPhone, name, phone,postData }) => {
             <div className="flex items-center pt-5">
               <p
                 style={{ direction: "rtl" }}
-                className=" text-gray-200 text-2xl w-full font-bold text-right"
+                className=" text-gray-200 text-lg lg:text-2xl w-full font-bold text-right"
               >
                 כל שנותר לנו הוא לשוחח בטלפון ולקבוע בפגישה במשרדי החברה שלנו.
               </p>
@@ -69,7 +57,7 @@ const Step5 = ({ setPage, setName, setPhone, name, phone,postData }) => {
               placeholder="שם מלא…"
               style={{ direction: "rtl", borderRadius:"50px" }}
               
-              className="border-2 border-white text-white text-2xl mx-3 w-full outline-none py-5 px-8 rounded-3xl mt-4 bg-transparent"
+              className="border-2 border-white text-white text-base lg:text-2xl mx-3 w-full outline-none py-3 lg:py-5 px-8 rounded-3xl mt-4 bg-transparent"
             />
             <input
               type="text"
@@ -78,15 +66,15 @@ const Step5 = ({ setPage, setName, setPhone, name, phone,postData }) => {
               placeholder="שם מלא…"
               style={{ direction: "rtl", borderRadius:"50px" }}
               
-              className="border-2 border-white text-white text-2xl mx-3 mt-8 w-full outline-none py-5 px-8 rounded-3xl bg-transparent"
+              className="border-2 border-white text-white text-base lg:text-2xl mx-3 mt-8 w-full outline-none py-3 lg:py-5 px-8 rounded-3xl bg-transparent"
             />
 
-            <div className=" w-full flex items-center justify-end mt-12">
+            <div className=" w-full flex items-center justify-end mt-5  lg:mt-12 pl-4 lg:pl-0">
               <button
                 type="submit"
                 onClick={() => (name !== "" && phone !== "") ? postDataToServer() : null}
                 style={{ borderRadius: "50px" }}
-                className=" px-12 hover:bg-pr font-bold text-4xl mt-1 py-5 flex items-center   bg-transparent border-2 border-white text-white "
+                className=" px-12 hover:bg-pr font-bold text-xl lg:text-4xl mt-1 py-3  lg:py-5 flex items-center   bg-transparent border-2 border-white text-white "
               >
                  <div className="flex items-center font-bold text-white pt-1">
                 <MdOutlineKeyboardArrowLeft className="mGap" />

@@ -14,7 +14,7 @@ const Success = ({ setPage }) => {
           />
         </div>
         <h1
-          className="lg:text-7xl text-5xl text-center font-bold text-white"
+          className="lg:text-7xl text-5xl px-2 lg:px-0 text-center font-bold text-white"
           style={{ direction: "rtl" }}
         >
           ברכות! סיימת את השאלון
@@ -33,11 +33,11 @@ const Success = ({ setPage }) => {
         <button
           onClick={() => setPage(1)}
           style={{borderRadius:"50px"}}
-          className=" px-12 hover:bg-pr hover:text-white text-4xl mt-5 py-6 flex items-center   font-bold border-2 border-white   text-white  rounded-3xl"
+          className=" px-12 hover:bg-pr hover:text-white text-xl lg:text-4xl mt-5 py-3 lg:py-6 flex items-center   font-bold border-2 border-white   text-white  rounded-3xl"
         >
           חזרה לעמוד הראשי
         </button>
-        <div className=" w-full relative z-20 grid pt-28 pb-8 lg:pb-0 lg:pt-72 grid-cols-1 lg:grid-cols-3">
+        <div className=" w-full relative z-20 grid pt-44 pb-8 lg:pb-0 lg:pt-72 grid-cols-1 lg:grid-cols-3">
         <div className=" hidden lg:block"> </div>
         <div className="flex items-center justify-center w-full">
           <div className=" h-6">
