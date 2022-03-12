@@ -134,7 +134,7 @@ const Step5 = ({ setPage, setName, setPhone, name, phone,postData }) => {
       <div className=" w-full grid relative z-20 pt-20 pb-8 lg:pb-0 lg:pt-32 grid-cols-1 lg:grid-cols-3">
         <div> </div>
         <div className="flex items-center justify-center ">
-          <div className=" h-5">
+          <div className=" h-6">
             <img
               src={logo}
               style={{ width: "100%", height: "100%", objectFit: "contain" }}
@@ -142,7 +142,7 @@ const Step5 = ({ setPage, setName, setPhone, name, phone,postData }) => {
             />
           </div>
         </div>
-        <div className=" hidden lg:flex items-center justify-end text-white pr-6">
+        <div className=" hidden lg:flex items-center justify-end text-white pr-16">
           <CgArrowLongRight
             onClick={() => setPage(6)}
             className=" w-8 h-8 cursor-pointer"
