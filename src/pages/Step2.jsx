@@ -37,25 +37,25 @@ const Step2 = ({ setPage, idea, setIdea }) => {
           </div>
         </div>
       </div>
-      <div className=" w-full relative z-20 py-28 gap-96 grid grid-cols-1 lg:grid-cols-3 pt-40 lg:pt-60">
+      <div className=" w-full relative z-20 py-24 gap-96 grid grid-cols-1 lg:grid-cols-3 pt-40 lg:pt-60">
         <div className=" hidden lg:block"></div>
-        <div className=" pr-0 lg:pr-16 lg:col-span-2 flex items-center gap-2">
-          <form onSubmit={(e) => e.preventDefault()} className="pr-8 lg:pr-16">
+        <div className=" pr-0 lg:pr-16 lg:pl-20 lg:col-span-2 flex items-center gap-2">
+          <form onSubmit={(e) => e.preventDefault()} className="pr-8 lg:pr-32">
             <h1
               style={{ direction: "rtl" }}
               className=" text-5xl lg:text-7xl font-bold text-right text-white"
             >
               פרט בכלליות <br /> על הרעיון:
             </h1>
-            <div className="flex items-center gap-x-3 divide-x pt-5">
+            <div className="flex items-center gap-x-7 divide-x py-7">
               <p
                 style={{ direction: "rtl" }}
-                className=" text-white text-lg font-light text-right"
+                className=" text-gray-300 text-2xl font-light text-right"
               >
                 אנחנו מתחייבים שלא לשתף את הרעיון שלך אם אף גורם ו-או אדם אחר,
                 ולשמור על סודיות מוחלטת בנושא.
               </p>
-              <div className="  pl-2 lg:h-full h-12 w-32">
+              <div className="  pl-6 lg:h-full h-12 w-20">
                 <img
                   src={sheild}
                   style={{ width: "100%", height: "100%", objectFit: "cover" }}
@@ -67,8 +67,8 @@ const Step2 = ({ setPage, idea, setIdea }) => {
             <textarea
               onChange={(e) => setIdea(e.target.value)}
               placeholder="הקלד כאן…"
-              style={{ direction: "rtl" }}
-              className=" border border-white hidden lg:block text-white w-full outline-none p-2 rounded-3xl mt-4 bg-transparent"
+              style={{ direction: "rtl", borderRadius:"50px" }}
+              className=" border border-white hidden lg:block text-white w-full outline-none p-10 rounded-3xl text-2xl mt-4 bg-transparent"
               name=""
               value={idea}
               required
@@ -90,41 +90,42 @@ const Step2 = ({ setPage, idea, setIdea }) => {
                 rows="6"
               ></textarea>
             </div>
-            <div className=" w-full flex items-center justify-end">
+            <div className=" w-full flex items-center justify-end pt-8">
               <button
                 onClick={() => idea !== "" ? setPage(5): null}
                 type="submit"
-                className=" mt-5 lg:mt-3 px-9 hover:bg-pr bg-transparent text-2xl py-2 flex items-center  font-bold border border-white hover:text-black  text-white  rounded-3xl"
+                style={{borderRadius:"50px"}}
+                className=" px-16 hover:bg-pr hover:text-white text-3xl mt-1 py-6 flex items-center   font-bold border-2 border-white   text-white  rounded-3xl"
               >
                 המשך
               </button>
             </div>
           </form>
-          <div className=" w-20  hidden lg:flex items-center justify-center">
+          <div className=" w-20 hidden lg:flex items-center justify-center">
             <div className=" line relative">
-              <div className=" bg-pr w-9 h-9 rounded-full flex items-center justify-center text-black text-xl font-bold absolute top-0 -left-4">
+              <div className=" bg-pr w-14 h-14 rounded-full flex items-center justify-center text-black text-3xl font-bold absolute top-0 -left-7">
                 1
               </div>
-              <div className=" bg-pr font-bold  w-9 h-9 rounded-full flex items-center justify-center text-black text-xl  absolute top-16 -left-4">
+              <div style={{top:"88px"}} className=" bg-pr   w-14 h-14 rounded-full flex items-center justify-center text-black text-3xl font-bold absolute top-20 -left-7">
                 2
               </div>
-              <div className=" bg-black border border-white  w-9 h-9 rounded-full flex items-center justify-center text-white text-xl font-light absolute top-32 -left-4">
+              <div style={{top:"176px"}} className=" bg-black border border-white w-14 h-14 rounded-full flex items-center justify-center text-white text-3xl font-light absolute top-44 -left-7">
                 3
               </div>
-              <div className=" bg-black border border-white  w-9 h-9 rounded-full flex items-center justify-center text-white text-xl font-light absolute top-48 -left-4">
+              <div style={{top:"265px"}} className=" bg-black border border-white w-14 h-14 rounded-full flex items-center justify-center text-white text-3xl font-light absolute  -left-7">
                 4
               </div>
-              <div className=" bg-black border border-white  w-9 h-9 rounded-full flex items-center justify-center text-white text-xl font-light absolute top-64 -left-4">
+              <div style={{top:"355px"}} className=" bg-black border border-white w-14 h-14 rounded-full flex items-center justify-center text-white text-3xl font-light absolute top-64 -left-7">
                 5
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className=" w-full relative z-20 grid lg:pt-8 pt-0 pb-8 lg:pb-0 grid-cols-1 lg:grid-cols-3">
-        <div> </div>
-        <div className="flex items-center justify-center ">
-          <div className=" h-5">
+      <div className=" w-full relative z-20 grid pt-28 pb-8  lg:pt-0 grid-cols-1 lg:grid-cols-3">
+        <div className=" hidden lg:block"> </div>
+        <div className="flex items-center justify-center w-full">
+          <div className=" h-6">
             <img
               src={logo}
               style={{ width: "100%", height: "100%", objectFit: "contain" }}
@@ -132,10 +133,10 @@ const Step2 = ({ setPage, idea, setIdea }) => {
             />
           </div>
         </div>
-        <div className=" hidden lg:flex items-center justify-end text-white pr-6">
+        <div className="  items-center hidden lg:flex justify-end text-white pr-16">
           <CgArrowLongRight
             onClick={() => setPage(2)}
-            className=" w-8 h-8 cursor-pointer"
+            className=" w-12 h-12 cursor-pointer"
           />
         </div>
       </div>

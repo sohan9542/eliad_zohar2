@@ -7,19 +7,19 @@ const Step1 = ({ setPage }) => {
       <div className=" absolute lg:hidden top-0 left-0 backdrop z-10"></div>
       <div className=" w-full relative z-20 pt-10 flex lg:hidden items-center justify-center">
         <div className=" line_verticla relative">
-          <div className=" bg-pr w-9 h-9 rounded-full flex items-center justify-center text-black text-xl font-bold absolute -top-4 -left-3">
+          <div className=" bg-prw-14 h-14 rounded-full flex items-center justify-center text-black text-xl font-bold absolute -top-4 -left-3">
             1
           </div>
-          <div style={{left:"40px"}} className=" bg-black border border-white  w-9 h-9 rounded-full flex items-center justify-center text-white text-xl font-light absolute -top-4 ">
+          <div style={{left:"40px"}} className=" bg-black border border-white w-14 h-14 rounded-full flex items-center justify-center text-white text-xl font-light absolute -top-4 ">
             2
           </div>
-          <div style={{left: "91px"}} className=" bg-black border border-white  w-9 h-9 rounded-full flex items-center justify-center text-white text-xl font-light absolute -top-4 ">
+          <div style={{left: "91px"}} className=" bg-black border border-white w-14 h-14 rounded-full flex items-center justify-center text-white text-xl font-light absolute -top-4 ">
             3
           </div>
-          <div style={{left:"145px"}} className=" bg-black border border-white  w-9 h-9 rounded-full flex items-center justify-center text-white text-xl font-light absolute -top-4 ">
+          <div style={{left:"145px"}} className=" bg-black border border-white w-14 h-14 rounded-full flex items-center justify-center text-white text-xl font-light absolute -top-4 ">
             4
           </div>
-          <div style={{left:"200px"}} className=" bg-black border border-white  w-9 h-9 rounded-full flex items-center justify-center text-white text-xl font-light absolute -top-4">
+          <div style={{left:"200px"}} className=" bg-black border border-white w-14 h-14 rounded-full flex items-center justify-center text-white text-xl font-light absolute -top-4">
             5
           </div>
         </div>
@@ -29,21 +29,23 @@ const Step1 = ({ setPage }) => {
         <div className=" pr-0 lg:pr-16 lg:col-span-2 flex items-center gap-2">
           <div className=" pr-0 lg:pr-16">
             <h1
-              style={{ direction: "rtl" }}
-              className="lg:text-6xl text-4xl text-center font-bold  w-full lg:text-right text-white"
+              style={{ direction: "rtl", lineHeight:"85px" }}
+              className="lg:text-7xl text-4xl text-center font-bold  w-full lg:text-right text-white"
             >
               יש לך את הרעיון לקולקצייה הבאה?
             </h1>
             <div className=" w-full gap-8 flex items-center justify-center lg:justify-end mt-9">
               <button
                 onClick={() => setPage(3)}
-                className=" px-9 hover:bg-red-600 hover:text-white text-2xl mt-1 py-2 flex items-center   font-bold border border-white   text-white  rounded-3xl"
+                style={{borderRadius:"50px"}}
+                className=" px-16 hover:bg-red-600 hover:text-white text-3xl mt-1 py-6 flex items-center   font-bold border-2 border-white   text-white  rounded-3xl"
               >
                 לא
               </button>
               <button
                 onClick={() => setPage(4)}
-                className=" px-9 hover:bg-pr bg-transparent text-2xl mt-1 py-2 flex items-center   font-bold border border-white hover:text-black  text-white  rounded-3xl"
+                style={{borderRadius:"50px"}}
+                className=" px-16 hover:bg-pr bg-transparent text-3xl mt-1 py-6 flex items-center   font-bold border-2 border-white hover:text-black  text-white  rounded-3xl"
               >
                 כן
               </button>
@@ -51,29 +53,29 @@ const Step1 = ({ setPage }) => {
           </div>
           <div className=" w-20 hidden lg:flex items-center justify-center">
             <div className=" line relative">
-              <div className=" bg-pr w-9 h-9 rounded-full flex items-center justify-center text-black text-xl font-bold absolute top-0 -left-4">
+              <div className=" bg-pr w-14 h-14 rounded-full flex items-center justify-center text-black text-3xl font-bold absolute top-0 -left-7">
                 1
               </div>
-              <div className=" bg-black border border-white  w-9 h-9 rounded-full flex items-center justify-center text-white text-xl font-light absolute top-16 -left-4">
+              <div style={{top:"88px"}} className=" bg-black border border-white w-14 h-14 rounded-full flex items-center justify-center text-white text-3xl font-light absolute top-20 -left-7">
                 2
               </div>
-              <div className=" bg-black border border-white  w-9 h-9 rounded-full flex items-center justify-center text-white text-xl font-light absolute top-32 -left-4">
+              <div style={{top:"176px"}} className=" bg-black border border-white w-14 h-14 rounded-full flex items-center justify-center text-white text-3xl font-light absolute top-44 -left-7">
                 3
               </div>
-              <div className=" bg-black border border-white  w-9 h-9 rounded-full flex items-center justify-center text-white text-xl font-light absolute top-48 -left-4">
+              <div style={{top:"265px"}} className=" bg-black border border-white w-14 h-14 rounded-full flex items-center justify-center text-white text-3xl font-light absolute  -left-7">
                 4
               </div>
-              <div className=" bg-black border border-white  w-9 h-9 rounded-full flex items-center justify-center text-white text-xl font-light absolute top-64 -left-4">
+              <div style={{top:"355px"}} className=" bg-black border border-white w-14 h-14 rounded-full flex items-center justify-center text-white text-3xl font-light absolute top-64 -left-7">
                 5
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className=" w-full relative z-20 grid pt-28 pb-8 lg:pb-0 lg:pt-40 grid-cols-1 lg:grid-cols-3">
+      <div className=" w-full relative z-20 grid pt-28 pb-8 lg:pb-0 lg:pt-60 grid-cols-1 lg:grid-cols-3">
         <div className=" hidden lg:block"> </div>
         <div className="flex items-center justify-center w-full">
-          <div className=" h-5">
+          <div className=" h-6">
             <img
               src={logo}
               style={{ width: "100%", height: "100%", objectFit: "contain" }}
@@ -81,10 +83,10 @@ const Step1 = ({ setPage }) => {
             />
           </div>
         </div>
-        <div className="  items-center hidden lg:flex justify-end text-white pr-6">
+        <div className="  items-center hidden lg:flex justify-end text-white pr-16">
           <CgArrowLongRight
             onClick={() => setPage(1)}
-            className=" w-8 h-8 cursor-pointer"
+            className=" w-12 h-12 cursor-pointer"
           />
         </div>
       </div>

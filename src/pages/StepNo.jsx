@@ -6,7 +6,7 @@ const StepNo = ({setPage}) => {
   return (
     <div className=" min-h-screen bg_noyes relative">
       <div className="absolute top-0 left-0 backdrop flex items-center flex-col gap-5">
-        <div className="  mt-20 lg:mt-40 lg:h-16 h-24">
+        <div className="  mt-20 lg:mt-72 lg:h-72 h-24">
           <img
             src={error}
             style={{ width: "100%", height: "100%", objectFit: "cover" }}
@@ -14,14 +14,14 @@ const StepNo = ({setPage}) => {
           />
         </div>
         <h1
-          className="text-7xl font-bold text-white"
+          className="text-8xl py-3 font-bold text-white"
           style={{ direction: "rtl" }}
         >
           מתנצלים,
         </h1>
         <p
-          className=" text-xl text-center hidden lg:block text-white font-light"
-          style={{ width: "450px" }}
+          className=" text-3xl text-center hidden lg:block text-gray-200 font-semibold"
+          style={{ width: "800px" }}
         >
           כנראה שאתה עדין לא מספיק מוכן להקים את פרוייקט הNFT הבא ולכן נעדיף שלא
           לעבוד איתך, במידה ותפתח את הרעיון לעומק יותר צור עמנו קשר שנית.
@@ -33,13 +33,13 @@ const StepNo = ({setPage}) => {
           כנראה שאתה עדין לא מספיק מוכן להקים את פרוייקט הNFT הבא ולכן נעדיף שלא
           לעבוד איתך, במידה ותפתח את הרעיון לעומק יותר צור עמנו קשר שנית.
         </p>
-        <button onClick={()=>setPage(1)} className=" mt-3 px-9 hover:bg-pr bg-transparent text-2xl py-2 flex items-center  font-bold border border-white hover:text-black  text-white  rounded-3xl">
+        <button onClick={()=>setPage(1)} style={{borderRadius:"50px"}} className=" mt-3 px-12 hover:bg-pr bg-transparent text-3xl py-5 flex items-center  font-bold border-2 border-white hover:text-black  text-white  rounded-3xl">
         חזרה לעמוד הראשי
         </button>
-        <div className=" w-full grid relative z-20 pt-20  pb-8 lg:pb-0 lg:pt-80 grid-cols-1 lg:grid-cols-3">
+        <div className=" w-full grid relative z-20 pt-20  pb-8 lg:pb-0 lg:pt-52 grid-cols-1 lg:grid-cols-3">
           <div> </div>
           <div className="flex items-center justify-center ">
-            <div className=" h-5">
+            <div className=" h-6">
               <img
                 src={logo}
                 style={{ width: "100%", height: "100%", objectFit: "contain" }}
@@ -47,10 +47,10 @@ const StepNo = ({setPage}) => {
               />
             </div>
           </div>
-          <div className=" hidden lg:flex items-center justify-end text-white pr-6">
+          <div className=" hidden lg:flex items-center justify-end text-white pr-16">
             <CgArrowLongRight
               onClick={() => setPage(2)}
-              className=" w-8 h-8 cursor-pointer"
+              className=" w-12 h-12 cursor-pointer"
             />
           </div>
         </div>

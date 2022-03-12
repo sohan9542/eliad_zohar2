@@ -43,7 +43,7 @@ const Step5 = ({ setPage, setName, setPhone, name, phone,postData }) => {
       </div>
       <div className=" w-full py-28 relative z-20 gap-96 grid grid-cols-1 lg:grid-cols-3 pt-40 lg:pt-60">
         <div className=" hidden lg:block"></div>
-        <div className=" pr-0 lg:pr-16 col-span-2 flex items-center gap-2">
+        <div className=" pr-0 lg:pr-16 lg:pl-32 col-span-2 flex items-center justify-end gap-20">
           <form
             onSubmit={(e) => e.preventDefault()}
             className=" pr-12 lg:pr-16"
@@ -57,7 +57,7 @@ const Step5 = ({ setPage, setName, setPhone, name, phone,postData }) => {
             <div className="flex items-center pt-5">
               <p
                 style={{ direction: "rtl" }}
-                className=" text-white text-lg font-bold text-right"
+                className=" text-gray-200 text-2xl w-full font-bold text-right"
               >
                 כל שנותר לנו הוא לשוחח בטלפון ולקבוע בפגישה במשרדי החברה שלנו.
               </p>
@@ -67,48 +67,64 @@ const Step5 = ({ setPage, setName, setPhone, name, phone,postData }) => {
               onChange={(e) => setName(e.target.value)}
               required
               placeholder="שם מלא…"
-              style={{ direction: "rtl" }}
-              className="border border-white text-white mx-3 w-full outline-none py-3 px-2 rounded-3xl mt-4 bg-transparent"
+              style={{ direction: "rtl", borderRadius:"50px" }}
+              
+              className="border-2 border-white text-white text-2xl mx-3 w-full outline-none py-5 px-8 rounded-3xl mt-4 bg-transparent"
             />
             <input
               type="text"
               onChange={(e) => setPhone(e.target.value)}
               required
               placeholder="שם מלא…"
-              style={{ direction: "rtl" }}
-              className="border border-white  text-white mx-3 w-full outline-none py-3 px-2 rounded-3xl mt-4 bg-transparent"
+              style={{ direction: "rtl", borderRadius:"50px" }}
+              
+              className="border-2 border-white text-white text-2xl mx-3 mt-8 w-full outline-none py-5 px-8 rounded-3xl bg-transparent"
             />
 
-            <div className=" w-full flex items-center justify-end mt-3">
+            <div className=" w-full flex items-center justify-end mt-12">
               <button
                 type="submit"
                 onClick={() => (name !== "" && phone !== "") ? postDataToServer() : null}
-                className=" mt-3 px-9 hover:bg-pr  bg-transparent text-2xl py-2 flex items-center  font-bold border border-white hover:text-black  text-white  rounded-3xl"
+                style={{ borderRadius: "50px" }}
+                className=" px-12 hover:bg-pr font-bold text-4xl mt-1 py-5 flex items-center   bg-transparent border-2 border-white text-white "
               >
-                <div className="flex items-center text-white hover:text-black pt-1">
-                  <MdOutlineKeyboardArrowLeft className="mGap" />
-                  <MdOutlineKeyboardArrowLeft className="mGap" />
-                  <MdOutlineKeyboardArrowLeft />
-                </div>
+                 <div className="flex items-center font-bold text-white pt-1">
+                <MdOutlineKeyboardArrowLeft className="mGap" />
+                <MdOutlineKeyboardArrowLeft className="mGap" />
+                <MdOutlineKeyboardArrowLeft />
+              </div>
                 צרו איתי קשר
               </button>
+            
             </div>
           </form>
-          <div className=" w-20  items-center justify-center hidden lg:flex">
+          <div className=" w-20 hidden lg:flex items-center justify-center">
             <div className=" line relative">
-              <div className=" bg-pr w-9 h-9 rounded-full flex items-center justify-center text-black text-xl font-bold absolute top-0 -left-4">
+              <div className=" bg-pr w-14 h-14 rounded-full flex items-center justify-center text-black text-3xl font-bold absolute top-0 -left-7">
                 1
               </div>
-              <div className=" bg-pr font-bold  w-9 h-9 rounded-full flex items-center justify-center text-black text-xl  absolute top-16 -left-4">
+              <div
+                style={{ top: "88px" }}
+                className=" bg-pr   w-14 h-14 rounded-full flex items-center justify-center text-black text-3xl font-bold absolute top-20 -left-7"
+              >
                 2
               </div>
-              <div className=" bg-pr font-bold  border-white  w-9 h-9 rounded-full flex items-center justify-center text-black text-xl  absolute top-32 -left-4">
+              <div
+                style={{ top: "176px" }}
+                className="  bg-pr   w-14 h-14 rounded-full flex items-center justify-center text-black text-3xl font-bold absolute top-20 -left-7"
+              >
                 3
               </div>
-              <div className=" bg-pr font-bold  border-white  w-9 h-9 rounded-full flex items-center justify-center text-black text-xl  absolute top-48 -left-4">
+              <div
+                style={{ top: "265px" }}
+                className="  bg-pr   w-14 h-14 rounded-full flex items-center justify-center text-black text-3xl font-bold absolute top-20 -left-7"
+              >
                 4
               </div>
-              <div className=" bg-pr font-bold  border-white  w-9 h-9 rounded-full flex items-center justify-center text-black text-xl  absolute top-64 -left-4">
+              <div
+                style={{ top: "355px" }}
+                className=" bg-pr   w-14 h-14 rounded-full flex items-center justify-center text-black text-3xl font-bold absolute top-20 -left-7"
+              >
                 5
               </div>
             </div>
