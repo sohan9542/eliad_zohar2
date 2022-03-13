@@ -26,13 +26,13 @@ const Home = ({setPage}) => {
           </button>
         </div>
       </div>
-      <div className=" w-full relative z-20 py-28 grid grid-cols-1 lg:grid-cols-3">
+      <div className=" w-full relative z-20 mt-16 lg:mt-0 py-12 grid grid-cols-1 lg:grid-cols-3">
         <div className=" hidden lg:block"></div>
         <div className=" lg:pr-16 pr-8 lg:col-span-2">
-          <h1 style={{direction:"rtl"}} className=" text-6xl lg:text-9xl font-bold w-full text-right text-white">
+          <h1 style={{direction:"rtl"}} className=" text-5xl lg:text-9xl font-bold w-full text-right text-white">
             נקים עבורך <br /> את הקולקציה <br /> הבאה.
           </h1>
-          <p style={{direction:"rtl"}} className="text-2xl font-light text-gray-200 text-right w-full py-8 pl-4 lg:pl-80">
+          <p style={{direction:"rtl"}} className=" text-lg lg:text-2xl font-light text-gray-200 text-right w-full py-8 pl-4 lg:pl-80">
             אנו מתמחים בהקמת קולקציות NFT מ-0 ל-100, חברתנו מבצעת תהליך ליווי
             מלא עד להגעה לקולצייה שתמיד חלמת. אפיון, אסטרטגיה, איור, מידולים תלת
             מימדיים, פיתוח Smart contracts כל אלה הם רק חלק קטן מהשירותים שלנו…
@@ -46,7 +46,7 @@ const Home = ({setPage}) => {
               </div>
               התחל בשאלון
             </button>
-            <button style={{borderRadius:"50px"}} onClick={()=>setPage(2)} className=" px-4 flex lg:hidden hover:bg-white font-bold text-4xl mt-1 py-3  items-center  border  bg-pr border-transparent text-black ">
+            <button style={{borderRadius:"50px"}} onClick={()=>setPage(2)} className=" px-4 flex lg:hidden hover:bg-white font-bold text-3xl mt-1 py-3  items-center  border  bg-pr border-transparent text-black ">
               <div className="flex items-center font-bold text-black pt-1">
                 <MdOutlineKeyboardArrowLeft className="mGap" />
                 <MdOutlineKeyboardArrowLeft className="mGap" />
@@ -83,8 +83,8 @@ const Home = ({setPage}) => {
           <p className="text-2xl flex items-center gap-4 text-white pl-0 lg:pl-3"><CgArrowLongLeft className=" w-12 h-12"/>בין הפרויקטים שלנו</p>
         </div>
       </div>
-      <div className=" w-full relative block lg:hidden z-20 pl-3 lg:pl-10">
-        <div className="flex items-center">
+      <div className=" w-full relative block  lg:hidden z-20 pl-3 lg:pl-10">
+        <div className="flex items-center gap-1">
           <a href="#" className=" h-32 w-14 ">
             <img
               src={avatar1}
@@ -107,7 +107,7 @@ const Home = ({setPage}) => {
             />
           </a>
           <p className="text-lg flex items-center gap-1 text-white pl-0">
-            <CgArrowLongLeft className=" w-7 h-7"/>בין הפרויקטים שלנו</p>
+            <CgArrowLongLeft className=" w-8 h-8"/>בין הפרויקטים שלנו</p>
         </div>
       </div>
     </div>

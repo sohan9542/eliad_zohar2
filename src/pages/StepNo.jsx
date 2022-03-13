@@ -5,8 +5,17 @@ import { CgArrowLongRight } from "react-icons/cg";
 const StepNo = ({setPage}) => {
   return (
     <div className=" min-h-screen bg_noyes relative">
+        <div className="flex items-center justify-center w-full pt-16">
+            <div className=" h-9">
+              <img
+                src={logo}
+                style={{ width: "100%", height: "100%", objectFit: "contain" }}
+                alt=""
+              />
+            </div>
+          </div>
       <div className="absolute top-0 left-0 backdrop flex items-center flex-col gap-5">
-        <div className="  mt-20 lg:mt-72 lg:h-72 h-24">
+        <div className="  mt-32 lg:mt-52 lg:h-40 h-24">
           <img
             src={error}
             style={{ width: "100%", height: "100%", objectFit: "cover" }}
@@ -27,7 +36,7 @@ const StepNo = ({setPage}) => {
           לעבוד איתך, במידה ותפתח את הרעיון לעומק יותר צור עמנו קשר שנית.
         </p>
         <p
-          className=" text-xl w-full font-bold text-center block lg:hidden text-white px-2"
+          className=" text-2xl w-full font-normal text-center block lg:hidden text-white px-2"
           
         >
           כנראה שאתה עדין לא מספיק מוכן להקים את פרוייקט הNFT הבא ולכן נעדיף שלא
@@ -36,7 +45,7 @@ const StepNo = ({setPage}) => {
         <button onClick={()=>setPage(1)} style={{borderRadius:"50px"}} className=" mt-3 px-16 hover:bg-pr bg-transparent text-xl lg:text-3xl py-5 flex items-center  font-bold border-2 border-white hover:text-black  text-white ">
         חזרה לעמוד הראשי
         </button>
-        <div className=" w-full grid relative z-20 pt-60  pb-8 lg:pb-0 lg:pt-52 grid-cols-1 lg:grid-cols-3">
+        <div className=" w-full grid relative z-20 pt-36  pb-8 lg:pb-0 lg:pt-40 grid-cols-1 lg:grid-cols-3">
           <div> </div>
           <div className="flex items-center justify-center ">
             <div className=" h-6">

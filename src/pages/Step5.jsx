@@ -45,7 +45,7 @@ const Step5 = ({ setPage, setName, setPhone, name, phone,postData }) => {
             <div className="flex items-center pt-5">
               <p
                 style={{ direction: "rtl" }}
-                className=" text-gray-200 text-lg lg:text-2xl w-full font-bold text-right"
+                className=" text-gray-200 text-xl lg:text-2xl w-full font-normal lg:font-semibold text-right"
               >
                 כל שנותר לנו הוא לשוחח בטלפון ולקבוע בפגישה במשרדי החברה שלנו.
               </p>
@@ -63,7 +63,7 @@ const Step5 = ({ setPage, setName, setPhone, name, phone,postData }) => {
               type="text"
               onChange={(e) => setPhone(e.target.value)}
               required
-              placeholder="שם מלא…"
+              placeholder="מספר טלפון…"
               style={{ direction: "rtl", borderRadius:"50px" }}
               
               className="border-2 border-white text-white text-base lg:text-2xl mx-3 mt-8 w-full outline-none py-3 lg:py-5 px-8 rounded-3xl bg-transparent"
@@ -74,7 +74,20 @@ const Step5 = ({ setPage, setName, setPhone, name, phone,postData }) => {
                 type="submit"
                 onClick={() => (name !== "" && phone !== "") ? postDataToServer() : null}
                 style={{ borderRadius: "50px" }}
-                className=" px-12 hover:bg-pr font-bold text-xl lg:text-4xl mt-1 py-3  lg:py-5 flex items-center   bg-transparent border-2 border-white text-white "
+                className=" px-12 hidden lg:flex hover:bg-pr font-bold text-xl lg:text-4xl mt-1 py-3  lg:py-5  items-center   bg-transparent border-2 border-white text-white "
+              >
+                 <div className="flex items-center font-bold text-white pt-1">
+                <MdOutlineKeyboardArrowLeft className="mGap" />
+                <MdOutlineKeyboardArrowLeft className="mGap" />
+                <MdOutlineKeyboardArrowLeft />
+              </div>
+                צרו איתי קשר
+              </button>
+              <button
+                type="submit"
+                onClick={() => (name !== "" && phone !== "") ? postDataToServer() : null}
+                style={{ borderRadius: "50px" }}
+                className=" px-12 w-full flex lg:hidden hover:bg-pr font-bold ml-2 text-xl lg:text-4xl mt-1 py-3  lg:py-5  items-center   bg-transparent border-2 border-white text-white "
               >
                  <div className="flex items-center font-bold text-white pt-1">
                 <MdOutlineKeyboardArrowLeft className="mGap" />

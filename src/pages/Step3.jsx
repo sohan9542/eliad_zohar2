@@ -24,7 +24,7 @@ const Step3 = ({ setPage, setDev_budget }) => {
           </div>
         </div>
       </div>
-      <div className=" w-full relative z-20 py-28 lg:pl-60 gap-20 grid grid-cols-1 lg:grid-cols-3 pt-40 lg:pt-60">
+      <div className=" w-full relative z-20 py-28 lg:pl-60 gap-20 grid grid-cols-1 lg:grid-cols-3 pt-32 lg:pt-40">
         <div className=" hidden lg:block"></div>
         <div className=" pr-0 lg:pr-16 col-span-2 flex items-center gap-20">
           <div className="pr-0 px-2 lg:pr-16">
@@ -35,14 +35,14 @@ const Step3 = ({ setPage, setDev_budget }) => {
               מה התקציה שלך לפיתוח והקמת קולקציית ה-NFT?
             </h1>
 
-            <div className=" w-full grid px-4 lg:px-0 grid-cols-1 mt-12 lg:grid-cols-2 gap-x-7 gap-y-4 lg:gap-y-9 pl-4 lg:pl-16">
+            <div className=" w-full grid px-4 lg:px-0 grid-cols-1 mt-12 lg:grid-cols-2 gap-x-7 gap-y-4 lg:gap-y-9 pl-4 lg:pl-0">
               <div
                 onClick={() => {
                   setDev_budget("₪25,000 - ₪50,000")
                   setPage(6)
                 }}
                 style={{borderRadius:"50px"}}
-                className=" px-12 hover:bg-pr hover:text-white text-2xl mt-1 py-3 justify-center lg:py-6 flex items-center   font-bold border-2 border-white   text-white  rounded-3xl"
+                className=" px-8 hover:bg-pr cursor-pointer hover:text-white text-2xl mt-1 py-3 justify-center lg:py-6 flex items-center  font-light  lg:font-semibold border-2 border-white   text-white  rounded-3xl"
               >
                 ₪25,000 - ₪50,000
               </div>
@@ -52,7 +52,7 @@ const Step3 = ({ setPage, setDev_budget }) => {
                   setPage(6)
                 }}
                 style={{borderRadius:"50px"}}
-                className=" px-12 hover:bg-pr hover:text-white text-2xl mt-1 py-3 justify-center lg:py-6 flex items-center   font-bold border-2 border-white   text-white  rounded-3xl"
+                className=" px-8 hover:bg-pr cursor-pointer hover:text-white text-2xl mt-1 py-3 justify-center lg:py-6 flex items-center  font-light  lg:font-semibold border-2 border-white   text-white  rounded-3xl"
               >
                 ₪50,000 - ₪100,000
               </div>
@@ -62,7 +62,7 @@ const Step3 = ({ setPage, setDev_budget }) => {
                   setPage(6)
                 }}
                 style={{borderRadius:"50px"}}
-                className=" px-12 hover:bg-pr hover:text-white text-2xl mt-1 py-3 justify-center lg:py-6 flex items-center   font-bold border-2 border-white   text-white  rounded-3xl"
+                className=" px-8 hover:bg-pr cursor-pointer hover:text-white text-2xl mt-1 py-3 justify-center lg:py-6 flex items-center  font-light  lg:font-semibold border-2 border-white   text-white  rounded-3xl"
               >
                 ₪100,000 - ₪250,000
               </div>
@@ -72,7 +72,7 @@ const Step3 = ({ setPage, setDev_budget }) => {
                   setPage(6)
                 }}
                 style={{borderRadius:"50px"}}
-                className=" px-12 hover:bg-pr hover:text-white text-2xl mt-1 py-3 justify-center lg:py-6 flex items-center   font-bold border-2 border-white   text-white  rounded-3xl"
+                className=" px-8 hover:bg-pr cursor-pointer hover:text-white text-2xl mt-1 py-3 justify-center lg:py-6 flex items-center  font-light  lg:font-semibold border-2 border-white   text-white  rounded-3xl"
               >
                 ₪250,000 ומעלה
               </div>
@@ -99,7 +99,7 @@ const Step3 = ({ setPage, setDev_budget }) => {
           </div>
         </div>
       </div>
-      <div className=" w-full relative z-20 grid pt-0 pb-8  lg:pt-32 grid-cols-1 lg:grid-cols-3">
+      <div className=" w-full relative z-20 grid pt-0 pb-8  lg:pt-36 grid-cols-1 lg:grid-cols-3">
         <div className=" hidden lg:block"> </div>
         <div className="flex items-center justify-center w-full">
           <div className=" h-6">

@@ -24,15 +24,21 @@ const Step1 = ({ setPage }) => {
           </div>
         </div>
       </div>
-      <div className=" w-full relative z-20 py-28 gap-96 grid grid-cols-1 lg:grid-cols-3 pt-52 lg:pt-72">
+      <div className=" w-full relative z-20 py-16 gap-96 grid grid-cols-1 lg:grid-cols-3 pt-52 lg:pt-72">
         <div className="hidden lg:block"></div>
-        <div className=" pr-0 lg:pr-16 lg:col-span-2 flex items-center gap-2">
+        <div className=" pr-0 lg:pr-16 lg:col-span-2 flex items-center justify-end gap-2">
           <div className=" pr-0 lg:pr-16">
             <h1
               style={{ direction: "rtl", lineHeight:"85px" }}
-              className="lg:text-7xl text-4xl text-center font-bold  w-full lg:text-right text-white"
+              className="lg:text-7xl text-4xl hidden lg:block text-center font-bold  w-full lg:text-right text-white"
             >
-              יש לך את הרעיון לקולקצייה הבאה?
+              יש לך את הרעיון <br /> לקולקצייה הבאה?
+            </h1>
+            <h1
+              style={{ direction: "rtl", lineHeight:"40px" }}
+              className="lg:text-7xl text-4xl block lg:hidden text-center font-bold  w-full lg:text-right text-white"
+            >
+              יש לך את הרעיון  לקולקצייה <br /> הבאה?
             </h1>
             <div className=" w-full lg:gap-8 gap-3 flex items-center justify-center lg:justify-end mt-9">
               <button
@@ -72,7 +78,7 @@ const Step1 = ({ setPage }) => {
           </div>
         </div>
       </div>
-      <div className=" w-full relative z-20 grid pt-28 pb-8 lg:pb-0 lg:pt-60 grid-cols-1 lg:grid-cols-3">
+      <div className=" w-full relative z-20 grid pt-52 pb-8 lg:pb-0 lg:pt-60 grid-cols-1 lg:grid-cols-3">
         <div className=" hidden lg:block"> </div>
         <div className="flex items-center justify-center w-full">
           <div className=" h-6">

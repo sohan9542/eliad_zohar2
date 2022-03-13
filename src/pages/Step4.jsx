@@ -25,25 +25,25 @@ const Step4 = ({ setPage, setPpc_budget }) => {
           </div>
         </div>
       </div>
-      <div className=" w-full relative z-20 py-28 lg:pl-60 gap-20 grid grid-cols-1 lg:grid-cols-3 pt-40 lg:pt-60">
+      <div className=" w-full relative z-20 py-28 lg:pl-60 gap-20 grid grid-cols-1 lg:grid-cols-3 pt-32 lg:pt-40">
         <div className=" hidden lg:block"></div>
         <div className=" pr-0 lg:pr-16 col-span-2 flex items-center gap-20">
           <div className="pr-0 px-2 lg:pr-16">
             <h1
               style={{ direction: "rtl" }}
-              className="text-4xl lg:text-7xl  font-bold text-center lg:text-right text-white"
+              className="text-4xl lg:text-7xl  px-3 lg:px-0 font-bold text-center lg:text-right text-white"
             >
               מה התקציב שלך לשיווק קולקציית ה-NFT?
             </h1>
 
-            <div className=" w-full grid px-4 lg:px-0 grid-cols-1 mt-12 lg:grid-cols-2 gap-x-7 gap-y-4 lg:gap-y-9 pl-4 lg:pl-16">
+            <div className=" w-full grid px-4 lg:px-0 grid-cols-1 mt-12 lg:grid-cols-2 gap-x-7 gap-y-4 lg:gap-y-9 pl-4">
               <div
                 onClick={() => {
                   setPpc_budget("₪25,000 - ₪50,000");
                   setPage(7);
                 }}
                 style={{ borderRadius: "50px" }}
-                className=" px-12 hover:bg-pr hover:text-white justify-center text-xl lg:text-2xl mt-1 py-3 lg:py-5 flex items-center   font-bold border-2 border-white   text-white  rounded-3xl"
+                className=" px-8 cursor-pointer hover:bg-pr hover:text-white justify-center text-xl lg:text-2xl mt-1 py-3 lg:py-5 flex items-center font-normal  lg:font-semibold border-2 border-white   text-white  rounded-3xl"
               >
                 ₪25,000 - ₪50,000
               </div>
@@ -53,7 +53,7 @@ const Step4 = ({ setPage, setPpc_budget }) => {
                   setPage(7);
                 }}
                 style={{ borderRadius: "50px" }}
-                className=" px-12 hover:bg-pr hover:text-white justify-center text-xl lg:text-2xl mt-1 py-3 lg:py-5 flex items-center   font-bold border-2 border-white   text-white  rounded-3xl"
+                className=" px-8 cursor-pointer hover:bg-pr hover:text-white justify-center text-xl lg:text-2xl mt-1 py-3 lg:py-5 flex items-center font-normal  lg:font-semibold border-2 border-white   text-white  rounded-3xl"
               >
                 ₪50,000 - ₪100,000
               </div>
@@ -63,7 +63,7 @@ const Step4 = ({ setPage, setPpc_budget }) => {
                   setPage(7);
                 }}
                 style={{ borderRadius: "50px" }}
-                className=" px-12 hover:bg-pr hover:text-white justify-center text-xl lg:text-2xl mt-1 py-3 lg:py-5 flex items-center   font-bold border-2 border-white   text-white  rounded-3xl"
+                className=" px-8 cursor-pointer hover:bg-pr hover:text-white justify-center text-xl lg:text-2xl mt-1 py-3 lg:py-5 flex items-center font-normal  lg:font-semibold border-2 border-white   text-white  rounded-3xl"
               >
                 ₪100,000 - ₪250,000
               </div>
@@ -73,7 +73,7 @@ const Step4 = ({ setPage, setPpc_budget }) => {
                   setPage(7);
                 }}
                 style={{ borderRadius: "50px" }}
-                className=" px-12 hover:bg-pr hover:text-white justify-center text-xl lg:text-2xl mt-1 py-3 lg:py-5 flex items-center   font-bold border-2 border-white   text-white  rounded-3xl"
+                className=" px-8 cursor-pointer hover:bg-pr hover:text-white justify-center text-xl lg:text-2xl mt-1 py-3 lg:py-5 flex items-center font-normal  lg:font-semibold border-2 border-white   text-white  rounded-3xl"
               >
                 ₪250,000 ומעלה
               </div>
@@ -112,7 +112,7 @@ const Step4 = ({ setPage, setPpc_budget }) => {
           </div>
         </div>
       </div>
-      <div className=" w-full relative z-20 grid pt-12 pb-8  lg:pt-44 grid-cols-1 lg:grid-cols-3">
+      <div className=" w-full relative z-20 grid pt-10 pb-8  lg:pt-40 grid-cols-1 lg:grid-cols-3">
         <div className=" hidden lg:block"> </div>
         <div className="flex items-center justify-center w-full">
           <div className=" h-6">

@@ -5,8 +5,17 @@ import { CgArrowLongRight } from "react-icons/cg";
 const Success = ({ setPage }) => {
   return (
     <div className=" min-h-screen bg_noyes relative">
+       <div className="flex items-center justify-center w-full pt-16">
+            <div className=" h-9">
+              <img
+                src={logo}
+                style={{ width: "100%", height: "100%", objectFit: "contain" }}
+                alt=""
+              />
+            </div>
+          </div>
       <div className="absolute top-0 left-0 backdrop flex items-center  flex-col gap-7">
-        <div className=" lg:h-36 mt-20 lg:mt-40 h-24">
+        <div className=" lg:h-36 mt-32 lg:mt-40 h-24">
           <img
             src={error}
             style={{ width: "100%", height: "100%", objectFit: "cover" }}
@@ -26,7 +35,7 @@ const Success = ({ setPage }) => {
           סיימת את השאלון שלנו, נציג מהחברה יצור עמך קשר בהקדם בכדי לתאם פגישה
           ולקדם את הרעיון שלך!
         </p>
-        <p className=" text-xl w-full font-bold text-center block lg:hidden text-white px-2">
+        <p className=" text-2xl w-full font-normal text-center block lg:hidden text-white px-2">
           סיימת את השאלון שלנו, נציג מהחברה יצור עמך קשר בהקדם בכדי לתאם פגישה
           ולקדם את הרעיון שלך!
         </p>
