@@ -16,6 +16,10 @@
   background-repeat: no-repeat;
   
 }
+body{
+  max-height: 100vh!important;
+  overflow-y: hidden;
+}
 .mGap{
   margin-right: -25px;
 }
