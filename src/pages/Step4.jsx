@@ -43,7 +43,7 @@ const Step4 = ({ setPage, setPpc_budget }) => {
                   setPage(7);
                 }}
                 style={{ borderRadius: "50px" }}
-                className=" px-8 cursor-pointer hover:bg-pr hover:text-white justify-center text-2xl lg:text-2xl mt-1 py-3 lg:py-5 flex items-center font-normal  lg:font-semibold border-2 border-white   text-white  rounded-3xl"
+                className=" px-8 cursor-pointer hover:bg-pr hover:text-white justify-center text-2xl lg:text-2xl mt-1 py-3 lg:py-6 flex items-center font-normal  lg:font-semibold border-2 border-white   text-white  rounded-3xl"
               >
                 ₪25,000 - ₪50,000
               </div>
@@ -53,7 +53,7 @@ const Step4 = ({ setPage, setPpc_budget }) => {
                   setPage(7);
                 }}
                 style={{ borderRadius: "50px" }}
-                className=" px-8 cursor-pointer hover:bg-pr hover:text-white justify-center text-2xl lg:text-2xl mt-1 py-3 lg:py-5 flex items-center font-normal  lg:font-semibold border-2 border-white   text-white  rounded-3xl"
+                className=" px-8 cursor-pointer hover:bg-pr hover:text-white justify-center text-2xl lg:text-2xl mt-1 py-3 lg:py-6 flex items-center font-normal  lg:font-semibold border-2 border-white   text-white  rounded-3xl"
               >
                 ₪50,000 - ₪100,000
               </div>
@@ -63,7 +63,7 @@ const Step4 = ({ setPage, setPpc_budget }) => {
                   setPage(7);
                 }}
                 style={{ borderRadius: "50px" }}
-                className=" px-8 cursor-pointer hover:bg-pr hover:text-white justify-center text-2xl lg:text-2xl mt-1 py-3 lg:py-5 flex items-center font-normal  lg:font-semibold border-2 border-white   text-white  rounded-3xl"
+                className=" px-8 cursor-pointer hover:bg-pr hover:text-white justify-center text-2xl lg:text-2xl mt-1 py-3 lg:py-6 flex items-center font-normal  lg:font-semibold border-2 border-white   text-white  rounded-3xl"
               >
                 ₪100,000 - ₪250,000
               </div>
@@ -73,7 +73,7 @@ const Step4 = ({ setPage, setPpc_budget }) => {
                   setPage(7);
                 }}
                 style={{ borderRadius: "50px" }}
-                className=" px-8 cursor-pointer hover:bg-pr hover:text-white justify-center text-2xl lg:text-2xl mt-1 py-3 lg:py-5 flex items-center font-normal  lg:font-semibold border-2 border-white   text-white  rounded-3xl"
+                className=" px-8 cursor-pointer hover:bg-pr hover:text-white justify-center text-2xl lg:text-2xl mt-1 py-3 lg:py-6 flex items-center font-normal  lg:font-semibold border-2 border-white   text-white  rounded-3xl"
               >
                 ₪250,000 ומעלה
               </div>
@@ -112,7 +112,7 @@ const Step4 = ({ setPage, setPpc_budget }) => {
           </div>
         </div>
       </div>
-      <div className=" w-full relative z-20 grid pt-10 pb-8  lg:pt-40 grid-cols-1 lg:grid-cols-3">
+      <div className=" w-full relative z-20 grid pt-10 pb-8  lg:pt-72 grid-cols-1 lg:grid-cols-3">
         <div className=" hidden lg:block"> </div>
         <div className="flex items-center justify-center w-full">
           <div className=" h-6">

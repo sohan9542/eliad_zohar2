@@ -132,7 +132,7 @@ const Step5 = ({ setPage, setName, setPhone, name, phone,postData }) => {
           </div>
         </div>
       </div>
-      <div className=" w-full grid relative z-20 pt-20 pb-8 lg:pb-0 lg:pt-32 grid-cols-1 lg:grid-cols-3">
+      <div className=" w-full grid relative z-20 pt-20 pb-8 lg:pb-0 lg:pt-40 grid-cols-1 lg:grid-cols-3">
         <div> </div>
         <div className="flex items-center justify-center ">
           <div className=" h-6">

@@ -46,7 +46,7 @@ const Success = ({ setPage }) => {
         >
           חזרה לעמוד הראשי
         </button>
-        <div className=" w-full relative z-20 grid pt-44 pb-8 lg:pb-0 lg:pt-48 grid-cols-1 lg:grid-cols-3">
+        <div className=" w-full relative z-20 grid pt-44 pb-8 lg:pb-0 lg:pt-72 grid-cols-1 lg:grid-cols-3">
         <div className=" hidden lg:block"> </div>
         <div className="flex items-center justify-center w-full">
           <div className=" h-6">

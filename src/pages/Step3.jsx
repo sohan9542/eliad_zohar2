@@ -99,7 +99,7 @@ const Step3 = ({ setPage, setDev_budget }) => {
           </div>
         </div>
       </div>
-      <div className=" w-full relative z-20 grid pt-0 pb-8  lg:pt-36 grid-cols-1 lg:grid-cols-3">
+      <div className=" w-full relative z-20 grid pt-0 pb-8  lg:pt-52 grid-cols-1 lg:grid-cols-3">
         <div className=" hidden lg:block"> </div>
         <div className="flex items-center justify-center w-full">
           <div className=" h-6">
