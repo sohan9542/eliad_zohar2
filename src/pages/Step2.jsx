@@ -61,7 +61,7 @@ const Step2 = ({ setPage, idea, setIdea }) => {
               >
                 <img
                   src={sheild}
-                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  style={{ width: "100%", height: "100%", objectFit: "contain" }}
                   alt=""
                 />
               </div>
