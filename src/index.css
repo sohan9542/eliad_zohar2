@@ -59,3 +59,12 @@ body{
     
   }
 }
+
+.hver{
+  display: none;
+}
+
+.parent:hover .hver{
+  display: flex;
+}
+

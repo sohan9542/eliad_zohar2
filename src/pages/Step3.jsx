@@ -10,7 +10,7 @@ const Step3 = ({ setPage, setDev_budget }) => {
           <div className=" bg-pr w-10 h-10 rounded-full flex items-center justify-center text-black text-xl font-bold absolute -top-4 -left-3">
             1
           </div>
-          <div style={{left:"55px"}} className=" bg-pr  w-10 h-10 rounded-full flex items-center justify-center text-black text-xl font-bold absolute -top-4 ">
+          <div  onClick={() => setPage(4)} style={{left:"55px"}} className=" bg-pr  w-10 h-10 rounded-full flex items-center justify-center text-black text-xl font-bold absolute -top-4 ">
             2
           </div>
           <div style={{left: "120px"}} className=" bg-pr w-10 h-10 rounded-full flex items-center justify-center text-black text-xl font-bold absolute -top-4 ">

@@ -21,7 +21,7 @@ const Step5 = ({ setPage, setName, setPhone, name, phone,postData }) => {
           <div style={{left: "120px"}} className=" bg-pr  w-10 h-10 rounded-full flex items-center justify-center text-black text-xl font-bold absolute -top-4 ">
             3
           </div>
-          <div style={{left:"188px"}} className=" bg-pr  w-10 h-10 rounded-full flex items-center justify-center text-black text-xl font-bold absolute -top-4 ">
+          <div onClick={() => setPage(6)} style={{left:"188px"}} className=" bg-pr  w-10 h-10 rounded-full flex items-center justify-center text-black text-xl font-bold absolute -top-4 ">
             4
           </div>
           <div style={{left:"250px"}} className=" bg-pr  w-10 h-10 rounded-full flex items-center justify-center text-black text-xl font-bold absolute -top-4">

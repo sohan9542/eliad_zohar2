@@ -8,11 +8,14 @@ const Step2 = ({ setPage, idea, setIdea }) => {
       <div className=" absolute lg:hidden top-0 left-0 backdrop z-10"></div>
       <div className=" w-full relative z-20 pt-10 flex lg:hidden items-center justify-center">
         <div className=" line_verticla relative">
-          <div className=" bg-pr w-10 h-10 rounded-full flex items-center justify-center text-black text-xl font-bold absolute -top-4 -left-3">
+          <div  onClick={() => setPage(2)} 
+          className=" bg-pr w-10 h-10 rounded-full flex items-center
+           justify-center text-black text-xl font-bold absolute -top-4 -left-3">
             1
           </div>
           <div
             style={{ left: "55px" }}
+           
             className=" bg-pr  w-10 h-10 rounded-full flex items-center justify-center text-black text-xl font-bold absolute -top-4 "
           >
             2

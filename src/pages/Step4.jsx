@@ -14,7 +14,7 @@ const Step4 = ({ setPage, setPpc_budget }) => {
           <div style={{left:"55px"}} className=" bg-pr  w-10 h-10 rounded-full flex items-center justify-center text-black text-xl font-bold absolute -top-4 ">
             2
           </div>
-          <div style={{left: "120px"}} className=" bg-pr  w-10 h-10 rounded-full flex items-center justify-center text-black text-xl font-bold absolute -top-4 ">
+          <div onClick={() => setPage(5)} style={{left: "120px"}} className=" bg-pr  w-10 h-10 rounded-full flex items-center justify-center text-black text-xl font-bold absolute -top-4 ">
             3
           </div>
           <div style={{left:"188px"}} className=" bg-pr  w-10 h-10 rounded-full flex items-center justify-center text-black text-xl font-bold absolute -top-4 ">
