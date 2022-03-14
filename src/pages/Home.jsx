@@ -57,7 +57,7 @@ const Home = ({setPage}) => {
           </div>
         </div>
       </div>
-      <div className=" w-full relative hidden lg:block z-20 pl-0 lg:pl-10">
+      <div className=" w-full relative hidden lg:block z-20 pt-20 pl-0 lg:pl-10">
         <div className="flex items-center">
           <a href="#" className=" h-52 w-24 ">
             <img

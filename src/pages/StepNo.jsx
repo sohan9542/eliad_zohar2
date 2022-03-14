@@ -45,7 +45,7 @@ const StepNo = ({setPage}) => {
         <button onClick={()=>setPage(1)} style={{borderRadius:"50px"}} className=" mt-3 px-16 hover:bg-pr bg-transparent text-xl lg:text-3xl py-5 flex items-center  font-bold border-2 border-white hover:text-black  text-white ">
         חזרה לעמוד הראשי
         </button>
-        <div className=" w-full grid relative z-20 pt-36  pb-8 lg:pb-0 lg:pt-52 grid-cols-1 lg:grid-cols-3">
+        <div className=" w-full grid relative z-20 pt-36  pb-8 lg:pb-0 lg:pt-60 grid-cols-1 lg:grid-cols-3">
           <div> </div>
           <div className="flex items-center justify-center ">
             <div className=" h-6">

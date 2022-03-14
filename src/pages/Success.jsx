@@ -15,7 +15,7 @@ const Success = ({ setPage }) => {
             </div>
           </div>
       <div className="absolute top-0 left-0 backdrop flex items-center  flex-col gap-7">
-        <div className=" lg:h-36 mt-32 lg:mt-40 h-24">
+        <div className=" lg:h-36 mt-36 lg:mt-40 h-24">
           <img
             src={error}
             style={{ width: "100%", height: "100%", objectFit: "cover" }}
@@ -46,7 +46,7 @@ const Success = ({ setPage }) => {
         >
           חזרה לעמוד הראשי
         </button>
-        <div className=" w-full relative z-20 grid pt-44 pb-8 lg:pb-0 lg:pt-72 grid-cols-1 lg:grid-cols-3">
+        <div className=" w-full relative z-20 grid pt-44 pb-8 lg:pb-0 lg:pt-80 grid-cols-1 lg:grid-cols-3">
         <div className=" hidden lg:block"> </div>
         <div className="flex items-center justify-center w-full">
           <div className=" h-6">

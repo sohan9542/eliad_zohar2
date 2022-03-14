@@ -24,7 +24,7 @@ const Step3 = ({ setPage, setDev_budget }) => {
           </div>
         </div>
       </div>
-      <div className=" w-full relative z-20 py-28 lg:pl-60 gap-20 grid grid-cols-1 lg:grid-cols-3 pt-32 lg:pt-40">
+      <div className=" w-full relative z-20 py-32 lg:pl-60 gap-20 grid grid-cols-1 lg:grid-cols-3 pt-32 lg:pt-40">
         <div className=" hidden lg:block"></div>
         <div className=" pr-0 lg:pr-16 col-span-2 flex items-center gap-20">
           <div className="pr-0 px-2 lg:pr-16">
@@ -99,7 +99,7 @@ const Step3 = ({ setPage, setDev_budget }) => {
           </div>
         </div>
       </div>
-      <div className=" w-full relative z-20 grid pt-0 pb-8  lg:pt-52 grid-cols-1 lg:grid-cols-3">
+      <div className=" w-full relative z-20 grid pt-0 pb-8  lg:pt-60 grid-cols-1 lg:grid-cols-3">
         <div className=" hidden lg:block"> </div>
         <div className="flex items-center justify-center w-full">
           <div className=" h-6">

@@ -144,7 +144,7 @@ const Step2 = ({ setPage, idea, setIdea }) => {
           </div>
         </div>
       </div>
-      <div className=" w-full relative z-20 grid pt-10 pb-8  lg:pt-12 grid-cols-1 lg:grid-cols-3">
+      <div className=" w-full relative z-20 grid pt-10 pb-8  lg:pt-24 grid-cols-1 lg:grid-cols-3">
         <div className=" hidden lg:block"> </div>
         <div className="flex items-center justify-center w-full">
           <div className=" h-6">
